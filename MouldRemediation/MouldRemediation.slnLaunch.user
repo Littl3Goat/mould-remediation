@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "mouldremediation.client\\mouldremediation.client.esproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "MouldRemediation.Server\\MouldRemediation.Server.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
