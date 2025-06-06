@@ -29,6 +29,11 @@
     }
   }
 
+  &--small {
+    padding: 0.8rem 1.6rem 0.7rem 1.6rem;
+    font-size: 1.4rem;
+  }
+
   &:not(:last-child) {
     margin-right: 1.4rem;
   }
