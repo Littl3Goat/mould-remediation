@@ -1,0 +1,63 @@
+.our-services-comp {
+  background-color: $white--3;
+  padding: 6.4rem;
+
+  &__text-box {
+    text-align: center;
+    margin-bottom: 6.4rem;
+  }
+
+  &__services-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    gap: 3.2rem;
+
+    .service {
+      border-radius: 0.8rem;
+      box-shadow: 0 0.4rem 1rem 0.1rem rgba($black--1, 0.09);
+      height: 41.6rem;
+      background-color: $white--3;
+      overflow: hidden;
+      transition: all 0.2s ease-out;
+
+      &__logo {
+        display: flex;
+        height: 45%;
+        font-size: 5.3rem;
+        background-color: $green--1;
+        justify-content: center;
+        align-items: center;
+        color: $white--3;
+      }
+
+      &__description {
+        padding: 0 2.4rem;
+      }
+
+      &__footer {
+        margin-top: 1rem;
+
+        a {
+          font-size: 1.6rem;
+          font-weight: 500;
+          text-decoration: none;
+          color: $green--1;
+
+          i {
+            font-size: 1.2rem;
+          }
+        }
+
+        a:hover {
+          color: $green--2;
+        }
+      }
+
+      &:hover {
+        box-shadow: 0 2rem 2.5rem -0.5rem rgba($black--1, 0.13);
+        transform: translateY(-0.5rem);
+      }
+    }
+  }
+}

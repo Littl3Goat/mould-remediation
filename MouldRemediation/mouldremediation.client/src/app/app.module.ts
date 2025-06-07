@@ -9,6 +9,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopMenuComponent } from './components/top-menu/top-menu.component';
 import { MainBannerComponent } from './components/main-banner/main-banner.component';
+import { WhyChooseUsComponent } from './components/why-choose-us/why-choose-us.component';
+import { OurServicesComponent } from './components/our-services/our-services.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,6 +19,8 @@ import { MainBannerComponent } from './components/main-banner/main-banner.compon
     AppRoutingModule,
     TopMenuComponent,
     MainBannerComponent,
+    WhyChooseUsComponent,
+    OurServicesComponent,
   ],
   providers: [provideHttpClient(withInterceptorsFromDi())],
   bootstrap: [AppComponent],
