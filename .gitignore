@@ -2,8 +2,9 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs
+/.vs/*
 /MouldRemediation/.vs/MouldRemediation
+/MouldRemediation/.vs/ProjectEvaluation
 /MouldRemediation/mouldremediation.client/.vscode
 /MouldRemediation/mouldremediation.client/obj/Debug
 /MouldRemediation/MouldRemediation.Server/bin/Debug/net8.0

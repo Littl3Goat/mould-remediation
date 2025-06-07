@@ -3,32 +3,32 @@
   padding: 6.4rem;
 
   &__text-box {
-    text-align: center;
     margin-bottom: 6.4rem;
+    text-align: center;
   }
 
   &__services-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    list-style: none;
     gap: 3.2rem;
+    list-style: none;
 
     .service {
       border-radius: 0.8rem;
       box-shadow: 0 0.4rem 1rem 0.1rem rgba($black--1, 0.09);
-      height: 41.6rem;
       background-color: $white--3;
+      height: 41.6rem;
       overflow: hidden;
       transition: all 0.2s ease-out;
 
       &__logo {
+        align-items: center;
+        background-color: $green--1;
+        color: $white--3;
         display: flex;
         height: 45%;
         font-size: 5.3rem;
-        background-color: $green--1;
         justify-content: center;
-        align-items: center;
-        color: $white--3;
       }
 
       &__description {
@@ -47,10 +47,10 @@
           i {
             font-size: 1.2rem;
           }
-        }
 
-        a:hover {
-          color: $green--2;
+          &:hover {
+            color: $green--2;
+          }
         }
       }
 

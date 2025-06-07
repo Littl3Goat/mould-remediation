@@ -5,9 +5,9 @@
   z-index: 10;
 
   &__body {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
 
   .logo-box {
@@ -19,16 +19,16 @@
     font-size: 1.4rem;
     font-weight: 500;
     list-style: none;
+
     &__item {
       padding: 1.2rem 3.5rem;
 
-      &:not(:last-child) a {
+      a {
         text-decoration: none;
-        color: $black--1;
-      }
 
-      &:not(:last-child) a:hover {
-        color: $green--1;
+        &:hover {
+          color: $green--1;
+        }
       }
     }
   }
