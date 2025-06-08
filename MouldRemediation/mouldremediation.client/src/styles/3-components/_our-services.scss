@@ -32,7 +32,10 @@
       }
 
       &__description {
-        padding: 0 2.4rem;
+        padding: 3rem 2.4rem;
+        &__heading {
+          margin-bottom: 1.2rem;
+        }
       }
 
       &__footer {

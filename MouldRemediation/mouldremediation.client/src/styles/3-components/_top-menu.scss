@@ -25,10 +25,10 @@
 
       a {
         text-decoration: none;
+      }
 
-        &:hover {
-          color: $green--1;
-        }
+      &:not(:last-child) a:hover {
+        color: $green--1;
       }
     }
   }

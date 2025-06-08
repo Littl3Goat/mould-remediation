@@ -6,8 +6,13 @@
   }
 
   &--2 {
+    color: $black--2;
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 2.4rem;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
   }
 }
