@@ -1,0 +1,49 @@
+.choose-us-comp {
+  background-color: $white--1;
+  padding: 6.4rem 0;
+
+  &__text-box {
+    padding: 0 22%;
+    text-align: center;
+  }
+
+  &__reason-list {
+    column-gap: 3rem;
+    display: flex;
+    list-style: none;
+    margin-top: 6rem;
+
+    .reason {
+      background-color: $white--3;
+      flex: 1;
+      padding: 3rem 4rem;
+      text-align: center;
+      transition: box-shadow 0.3s ease-out;
+
+      * {
+        user-select: none;
+      }
+
+      &__logo {
+        align-items: center;
+        background-color: $green--3;
+        border-radius: 100%;
+        color: $green--1;
+        display: inline-flex;
+        font-size: 2.8rem;
+        height: 6rem;
+        justify-content: center;
+        width: 6rem;
+      }
+
+      &__heading {
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      &:hover {
+        box-shadow: 0 1rem 2rem 0.2rem rgba(black, 0.09);
+      }
+    }
+  }
+}

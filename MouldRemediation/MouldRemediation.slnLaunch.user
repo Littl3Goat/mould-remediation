@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "mouldremediation.client\\mouldremediation.client.esproj",
+        "Action": "StartWithoutDebugging"
+      },
+      {
+        "Path": "MouldRemediation.Server\\MouldRemediation.Server.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      }
+    ]
+  }
+]

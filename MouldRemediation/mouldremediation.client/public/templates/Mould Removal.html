@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PureSpace Mould Removal Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .hero-pattern {
+        background-color: #f0f9ff;
+        background-image: radial-gradient(#bae6fd 0.5px, transparent 0.5px), radial-gradient(#bae6fd 0.5px, #f0f9ff 0.5px);
+        background-size: 20px 20px;
+        background-position: 0 0, 10px 10px;
+      }
+      .testimonial-card {
+        transition: all 0.3s ease;
+      }
+      .testimonial-card:hover {
+        transform: translateY(-5px);
+      }
+      .service-card {
+        transition: all 0.3s ease;
+      }
+      .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <div class="flex-shrink-0 flex items-center">
+              <svg class="h-8 w-8 text-teal-600" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.071 4.929a10 10 0 1 0 0 14.142 10 10 0 0 0 0-14.142zm-1.414 12.728a8 8 0 1 1 0-11.314 8 8 0 0 1 0 11.314z" />
+                <path d="M10.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm6 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-8 6a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm6 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+              </svg>
+              <span class="ml-2 text-xl font-bold text-gray-800">PureSpace</span>
+            </div>
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="#home" class="text-gray-700 hover:text-teal-600 px-3 py-2 text-sm font-medium">Home</a>
+            <a href="#services" class="text-gray-700 hover:text-teal-600 px-3 py-2 text-sm font-medium">Services</a>
+            <a href="#about" class="text-gray-700 hover:text-teal-600 px-3 py-2 text-sm font-medium">About</a>
+            <a href="#testimonials" class="text-gray-700 hover:text-teal-600 px-3 py-2 text-sm font-medium">Testimonials</a>
+            <a href="#contact" class="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-md text-sm font-medium">Contact Us</a>
+          </div>
+          <div class="flex md:hidden items-center">
+            <button id="mobile-menu-button" class="text-gray-500 hover:text-gray-700 focus:outline-none">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+          <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-teal-600 hover:bg-gray-50">Home</a>
+          <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-teal-600 hover:bg-gray-50">Services</a>
+          <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-teal-600 hover:bg-gray-50">About</a>
+          <a href="#testimonials" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-teal-600 hover:bg-gray-50">Testimonials</a>
+          <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium bg-teal-600 text-white hover:bg-teal-700">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-pattern py-20 md:py-32">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-4">Professional <span class="text-teal-600">Mould Removal</span> Services</h1>
+            <p class="text-lg text-gray-600 mb-8">Breathe easier with our expert mould remediation services. We identify, remove, and prevent mould growth to keep your home healthy and safe.</p>
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+              <a href="#contact" class="bg-teal-600 hover:bg-teal-700 text-white font-medium py-3 px-6 rounded-md text-center transition duration-300 ease-in-out transform hover:scale-105"> Free Consultation </a>
+              <a href="#services" class="bg-white hover:bg-gray-100 text-teal-600 font-medium py-3 px-6 rounded-md border border-teal-600 text-center transition duration-300 ease-in-out"> Our Services </a>
+            </div>
+          </div>
+          <div class="md:w-1/2 flex justify-center">
+            <div class="relative w-full max-w-md">
+              <div class="absolute inset-0 bg-teal-600 rounded-lg transform rotate-3"></div>
+              <svg class="relative z-10 w-full h-auto rounded-lg bg-white p-6" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#0d9488" d="M45.7,-51.9C59.9,-41.5,72.3,-28.3,76.2,-12.7C80.2,2.9,75.7,21,65.8,34.4C55.9,47.8,40.5,56.5,24.4,62.3C8.3,68.1,-8.5,71,-24.2,66.8C-39.9,62.6,-54.5,51.3,-63.6,36.3C-72.7,21.3,-76.3,2.6,-72.2,-14.1C-68.1,-30.8,-56.3,-45.5,-42.2,-55.9C-28.1,-66.3,-11.6,-72.4,2.3,-75C16.2,-77.6,31.5,-62.3,45.7,-51.9Z" transform="translate(100 100)" />
+                <text x="100" y="100" text-anchor="middle" alignment-baseline="middle" fill="white" font-size="14" font-weight="bold">MOULD FREE</text>
+                <text x="100" y="120" text-anchor="middle" alignment-baseline="middle" fill="white" font-size="14" font-weight="bold">GUARANTEE</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-800">Why Choose PureSpace?</h2>
+          <div class="w-16 h-1 bg-teal-600 mx-auto mt-4 mb-6"></div>
+          <p class="max-w-2xl mx-auto text-gray-600">We combine expertise, advanced technology, and personalized service to deliver exceptional mould removal results.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-gray-50 rounded-lg p-8 text-center hover:shadow-lg transition-all duration-300">
+            <div class="bg-teal-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Certified Experts</h3>
+            <p class="text-gray-600">Our team is certified in mould remediation with years of experience handling all types of mould problems.</p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg p-8 text-center hover:shadow-lg transition-all duration-300">
+            <div class="bg-teal-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Advanced Technology</h3>
+            <p class="text-gray-600">We use state-of-the-art equipment and eco-friendly solutions to effectively eliminate mould.</p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg p-8 text-center hover:shadow-lg transition-all duration-300">
+            <div class="bg-teal-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">100% Satisfaction</h3>
+            <p class="text-gray-600">We guarantee our work with a comprehensive warranty and follow-up inspections.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-800">Our Mould Removal Services</h2>
+          <div class="w-16 h-1 bg-teal-600 mx-auto mt-4 mb-6"></div>
+          <p class="max-w-2xl mx-auto text-gray-600">Comprehensive solutions tailored to your specific mould problems.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="service-card bg-white rounded-lg overflow-hidden shadow-md">
+            <div class="h-48 bg-teal-600 flex items-center justify-center">
+              <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+              </svg>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">Residential Mould Removal</h3>
+              <p class="text-gray-600 mb-4">Complete mould inspection and removal services for homes of all sizes. We identify the source and eliminate all traces of mould.</p>
+              <a href="#contact" class="text-teal-600 font-medium hover:text-teal-700 flex items-center">
+                Learn More
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="service-card bg-white rounded-lg overflow-hidden shadow-md">
+            <div class="h-48 bg-teal-600 flex items-center justify-center">
+              <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">Commercial Mould Remediation</h3>
+              <p class="text-gray-600 mb-4">Specialized mould removal for offices, retail spaces, and industrial buildings with minimal disruption to your business.</p>
+              <a href="#contact" class="text-teal-600 font-medium hover:text-teal-700 flex items-center">
+                Learn More
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="service-card bg-white rounded-lg overflow-hidden shadow-md">
+            <div class="h-48 bg-teal-600 flex items-center justify-center">
+              <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">Preventative Maintenance</h3>
+              <p class="text-gray-600 mb-4">Regular inspection and maintenance plans to prevent mould growth before it becomes a problem.</p>
+              <a href="#contact" class="text-teal-600 font-medium hover:text-teal-700 flex items-center">
+                Learn More
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="service-card bg-white rounded-lg overflow-hidden shadow-md">
+            <div class="h-48 bg-teal-600 flex items-center justify-center">
+              <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+              </svg>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">Mould Testing & Inspection</h3>
+              <p class="text-gray-600 mb-4">Comprehensive testing to identify mould species and determine the extent of contamination in your property.</p>
+              <a href="#contact" class="text-teal-600 font-medium hover:text-teal-700 flex items-center">
+                Learn More
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="service-card bg-white rounded-lg overflow-hidden shadow-md">
+            <div class="h-48 bg-teal-600 flex items-center justify-center">
+              <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">Water Damage Restoration</h3>
+              <p class="text-gray-600 mb-4">Quick response water damage services to prevent mould growth after floods, leaks, or other water incidents.</p>
+              <a href="#contact" class="text-teal-600 font-medium hover:text-teal-700 flex items-center"
+                >+ Learn More
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="service-card bg-white rounded-lg overflow-hidden shadow-md">
+            <div class="h-48 bg-teal-600 flex items-center justify-center">
+              <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">Crawl Space & Attic Mould</h3>
+              <p class="text-gray-600 mb-4">Specialized treatment for hard-to-reach areas where mould commonly grows due to poor ventilation.</p>
+              <a href="#contact" class="text-teal-600 font-medium hover:text-teal-700 flex items-center">
+                Learn More
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0">
+            <div class="relative">
+              <div class="absolute inset-0 bg-teal-600 rounded-lg transform -rotate-3"></div>
+              <div class="relative z-10 bg-gray-100 rounded-lg p-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Our Process</h3>
+                <ul class="space-y-4">
+                  <li class="flex items-start">
+                    <div class="flex-shrink-0 bg-teal-600 rounded-full p-1">
+                      <span class="text-white font-bold text-sm w-6 h-6 flex items-center justify-center">1</span>
+                    </div>
+                    <div class="ml-4">
+                      <h4 class="text-lg font-semibold text-gray-800">Thorough Inspection</h4>
+                      <p class="text-gray-600">We identify all mould-affected areas and the root cause of the problem.</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div class="flex-shrink-0 bg-teal-600 rounded-full p-1">
+                      <span class="text-white font-bold text-sm w-6 h-6 flex items-center justify-center">2</span>
+                    </div>
+                    <div class="ml-4">
+                      <h4 class="text-lg font-semibold text-gray-800">Containment</h4>
+                      <p class="text-gray-600">We isolate affected areas to prevent spores from spreading to clean areas.</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div class="flex-shrink-0 bg-teal-600 rounded-full p-1">
+                      <span class="text-white font-bold text-sm w-6 h-6 flex items-center justify-center">3</span>
+                    </div>
+                    <div class="ml-4">
+                      <h4 class="text-lg font-semibold text-gray-800">Air Filtration</h4>
+                      <p class="text-gray-600">HEPA filters capture airborne mould spores during the remediation process.</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div class="flex-shrink-0 bg-teal-600 rounded-full p-1">
+                      <span class="text-white font-bold text-sm w-6 h-6 flex items-center justify-center">4</span>
+                    </div>
+                    <div class="ml-4">
+                      <h4 class="text-lg font-semibold text-gray-800">Removal & Cleaning</h4>
+                      <p class="text-gray-600">We safely remove mould-infested materials and clean salvageable items.</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div class="flex-shrink-0 bg-teal-600 rounded-full p-1">
+                      <span class="text-white font-bold text-sm w-6 h-6 flex items-center justify-center">5</span>
+                    </div>
+                    <div class="ml-4">
+                      <h4 class="text-lg font-semibold text-gray-800">Prevention</h4>
+                      <p class="text-gray-600">We address moisture sources and apply preventative treatments.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-1/2 md:pl-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">About PureSpace</h2>
+            <div class="w-16 h-1 bg-teal-600 mb-6"></div>
+            <p class="text-gray-600 mb-6">PureSpace is a leading mould remediation company with over 15 years of experience. We specialize in identifying and eliminating mould problems at their source, ensuring your home or business remains mould-free.</p>
+            <p class="text-gray-600 mb-6">Our team of certified technicians uses the latest technology and eco-friendly solutions to safely and effectively remove mould while minimizing disruption to your daily life or business operations.</p>
+            <div class="grid grid-cols-2 gap-4 mb-8">
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <div class="text-3xl font-bold text-teal-600">15+</div>
+                <div class="text-gray-600">Years Experience</div>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <div class="text-3xl font-bold text-teal-600">5,000+</div>
+                <div class="text-gray-600">Projects Completed</div>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <div class="text-3xl font-bold text-teal-600">100%</div>
+                <div class="text-gray-600">Satisfaction Rate</div>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <div class="text-3xl font-bold text-teal-600">24/7</div>
+                <div class="text-gray-600">Emergency Service</div>
+              </div>
+            </div>
+            <a href="#contact" class="bg-teal-600 hover:bg-teal-700 text-white font-medium py-3 px-6 rounded-md inline-block transition duration-300 ease-in-out"> Contact Our Team </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-800">What Our Clients Say</h2>
+          <div class="w-16 h-1 bg-teal-600 mx-auto mt-4 mb-6"></div>
+          <p class="max-w-2xl mx-auto text-gray-600">Don't just take our word for it. Here's what our satisfied customers have to say about our mould removal services.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="testimonial-card bg-white rounded-lg p-6 shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="flex-shrink-0">
+                <div class="w-12 h-12 rounded-full bg-teal-100 flex items-center justify-center">
+                  <span class="text-teal-600 font-bold text-lg">JD</span>
+                </div>
+              </div>
+              <div class="ml-4">
+                <h4 class="text-lg font-semibold text-gray-800">John Davis</h4>
+                <div class="flex text-yellow-400">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                  </svg>
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                  </svg>
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                  </svg>
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                  </svg>
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-600 italic">"PureSpace did an amazing job removing mould from our basement after a flood. They were thorough, professional, and explained everything they were doing. Our basement is now completely mould-free!"</p>
+          </div>
+
+          <div class="testimonial-card bg-white rounded-lg p-6 shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="flex-shrink-0">
+                <div class="w-12 h-12 rounded-full bg-teal-100 flex items-center justify-center">
+                  <span class="text-teal-600 font-bold text-lg">SM</span>
+                </div>
+              </div>
+              <div class="ml-4">
+                <h4 class="text-lg font-semibold text-gray-800">Sarah Miller</h4>
+                <div class="flex text-yellow-400">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                  </svg>
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                  </svg>
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                  </svg>
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                  </svg>
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-600 italic">"I was concerned about mould in my bathroom and called PureSpace. They responded quickly, identified the problem, and completely eliminated the mould. They also gave me great tips to prevent future issues."</p>
+          </div>
+
+          <div class="testimonial-card bg-white rounded-lg p-6 shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="flex-shrink-0">
+                <div class="w-12 h-12 rounded-full bg-teal-100 flex items-center justify-center">
+                  <span class="text-teal-600 font-bold text-lg">RJ</span>
+                </div>
+              </div>
+              <div class="ml-4">
+                <h4 class="text-lg font-semibold text-gray-800">Robert Johnson</h4>
+                <div class="flex text-yellow-400">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                  </svg>
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                  </svg>
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                  </svg>
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                  </svg>
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-600 italic">"As a business owner, I needed quick and discreet mould removal services. PureSpace worked after hours to minimize disruption and did an excellent job. Highly recommend their commercial services!"</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-teal-600">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h2 class="text-3xl font-bold text-white mb-6">Ready to Breathe Easier?</h2>
+          <p class="max-w-2xl mx-auto text-teal-100 mb-8">Don't let mould affect your health and property. Contact us today for a free consultation and take the first step towards a mould-free environment.</p>
+          <a href="#contact" class="bg-white hover:bg-gray-100 text-teal-600 font-medium py-3 px-8 rounded-md inline-block transition duration-300 ease-in-out transform hover:scale-105"> Get Your Free Consultation </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-800">Contact Us</h2>
+          <div class="w-16 h-1 bg-teal-600 mx-auto mt-4 mb-6"></div>
+          <p class="max-w-2xl mx-auto text-gray-600">Have questions or ready to schedule a consultation? Reach out to our team today.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div>
+            <div class="bg-gray-50 rounded-lg p-8">
+              <h3 class="text-xl font-semibold text-gray-800 mb-6">Send Us a Message</h3>
+              <form id="contact-form" class="space-y-6">
+                <div>
+                  <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                  <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-teal-500 focus:border-teal-500" />
+                </div>
+                <div>
+                  <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                  <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-teal-500 focus:border-teal-500" />
+                </div>
+                <div>
+                  <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-teal-500 focus:border-teal-500" />
+                </div>
+                <div>
+                  <label for="service" class="block text-sm font-medium text-gray-700 mb-1">Service Needed</label>
+                  <select id="service" name="service" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-teal-500 focus:border-teal-500">
+                    <option value="">Select a service</option>
+                    <option value="residential">Residential Mould Removal</option>
+                    <option value="commercial">Commercial Mould Remediation</option>
+                    <option value="inspection">Mould Testing & Inspection</option>
+                    <option value="water">Water Damage Restoration</option>
+                    <option value="preventative">Preventative Maintenance</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Your Message</label>
+                  <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-teal-500 focus:border-teal-500"></textarea>
+                </div>
+                <div>
+                  <button type="submit" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-medium py-3 px-6 rounded-md transition duration-300 ease-in-out">Send Message</button>
+                  <p class="text-sm text-gray-500 mt-2 text-center">This is a demo form. In a real implementation, this would send your information to our team.</p>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div>
+            <div class="bg-gray-50 rounded-lg p-8 mb-8">
+              <h3 class="text-xl font-semibold text-gray-800 mb-6">Contact Information</h3>
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                    </svg>
+                  </div>
+                  <div class="ml-4">
+                    <p class="text-gray-600">Phone</p>
+                    <p class="text-gray-800 font-medium">(555) 123-4567</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                  </div>
+                  <div class="ml-4">
+                    <p class="text-gray-600">Email</p>
+                    <p class="text-gray-800 font-medium">info@purespace.com</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                  </div>
+                  <div class="ml-4">
+                    <p class="text-gray-600">Address</p>
+                    <p class="text-gray-800 font-medium">123 Clean Street, Suite 100<br />Healthyville, ST 12345</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                  </div>
+                  <div class="ml-4">
+                    <p class="text-gray-600">Business Hours</p>
+                    <p class="text-gray-800 font-medium">Monday - Friday: 8am - 6pm<br />Saturday: 9am - 2pm<br />Sunday: Closed</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-lg p-8">
+              <h3 class="text-xl font-semibold text-gray-800 mb-6">Emergency Service</h3>
+              <p class="text-gray-600 mb-4">Mould or water damage emergency? We offer 24/7 emergency response services.</p>
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
+                <span class="ml-2 text-xl font-bold text-teal-600">(555) 999-8888</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-800">Frequently Asked Questions</h2>
+          <div class="w-16 h-1 bg-teal-600 mx-auto mt-4 mb-6"></div>
+          <p class="max-w-2xl mx-auto text-gray-600">Find answers to common questions about mould removal and our services.</p>
+        </div>
+
+        <div class="max-w-3xl mx-auto" id="faq-container">
+          <div class="mb-6">
+            <button class="faq-question flex justify-between items-center w-full bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 focus:outline-none" data-target="faq-1">
+              <span class="text-lg font-medium text-gray-800">How do I know if I have a mould problem?</span>
+              <svg class="w-5 h-5 text-teal-600 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div id="faq-1" class="faq-answer hidden bg-white mt-2 p-4 rounded-lg">
+              <p class="text-gray-600">Common signs of mould include visible growth (often appearing as black, green, or white spots), a musty odor, water stains, peeling wallpaper, and health symptoms like allergic reactions, respiratory issues, or headaches when in the affected area. If you suspect mould, it's best to have a professional inspection.</p>
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <button class="faq-question flex justify-between items-center w-full bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 focus:outline-none" data-target="faq-2">
+              <span class="text-lg font-medium text-gray-800">Is mould dangerous to my health?</span>
+              <svg class="w-5 h-5 text-teal-600 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div id="faq-2" class="faq-answer hidden bg-white mt-2 p-4 rounded-lg">
+              <p class="text-gray-600">Mould can cause health problems, especially for people with allergies, asthma, or weakened immune systems. Symptoms can include coughing, wheezing, nasal congestion, eye irritation, skin rashes, and in some cases, more severe reactions. Some moulds produce mycotoxins that can cause serious health issues with prolonged exposure.</p>
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <button class="faq-question flex justify-between items-center w-full bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 focus:outline-none" data-target="faq-3">
+              <span class="text-lg font-medium text-gray-800">How long does mould removal take?</span>
+              <svg class="w-5 h-5 text-teal-600 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div id="faq-3" class="faq-answer hidden bg-white mt-2 p-4 rounded-lg">
+              <p class="text-gray-600">The duration of mould removal depends on the extent of the infestation, the affected materials, and the size of the area. Small jobs might take 1-2 days, while larger or more complex jobs can take several days to a week. Our team will provide a timeline estimate after the initial inspection.</p>
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <button class="faq-question flex justify-between items-center w-full bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 focus:outline-none" data-target="faq-4">
+              <span class="text-lg font-medium text-gray-800">Can I remove mould myself?</span>
+              <svg class="w-5 h-5 text-teal-600 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div id="faq-4" class="faq-answer hidden bg-white mt-2 p-4 rounded-lg">
+              <p class="text-gray-600">Small areas of mould (less than 10 square feet) on non-porous surfaces can sometimes be cleaned with proper precautions. However, larger infestations, mould on porous materials, or mould caused by sewage or contaminated water should always be handled by professionals. DIY removal can often spread spores and worsen the problem.</p>
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <button class="faq-question flex justify-between items-center w-full bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 focus:outline-none" data-target="faq-5">
+              <span class="text-lg font-medium text-gray-800">How can I prevent mould from returning?</span>
+              <svg class="w-5 h-5 text-teal-600 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div id="faq-5" class="faq-answer hidden bg-white mt-2 p-4 rounded-lg">
+              <p class="text-gray-600">To prevent mould from returning: control humidity levels (keep below 60%), fix leaks promptly, ensure proper ventilation in bathrooms and kitchens, use dehumidifiers in damp areas, clean and dry water-damaged areas within 24-48 hours, and schedule regular mould inspections. Our team provides customized prevention plans after remediation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <div class="flex items-center mb-4">
+              <svg class="h-8 w-8 text-teal-400" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.071 4.929a10 10 0 1 0 0 14.142 10 10 0 0 0 0-14.142zm-1.414 12.728a8 8 0 1 1 0-11.314 8 8 0 0 1 0 11.314z" />
+                <path d="M10.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm6 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-8 6a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm6 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+              </svg>
+              <span class="ml-2 text-xl font-bold">PureSpace</span>
+            </div>
+            <p class="text-gray-400 mb-4">Professional mould removal services for residential and commercial properties.</p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-teal-400">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path>
+                </svg>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-teal-400">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427" />
+                  <script>
+                    (function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'949ae3ad72162008',t:'MTc0ODkwODYwNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();
+                  </script>
+                </svg></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

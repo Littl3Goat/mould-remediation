@@ -1,0 +1,17 @@
+.main-banner-comp {
+  background-color: #f0f9ff;
+
+  &__body {
+    display: flex;
+    flex-direction: row;
+    padding: 10rem 0;
+  }
+
+  &__text-box {
+    flex: 1;
+  }
+
+  &__img-box {
+    flex: 1.1;
+  }
+}
