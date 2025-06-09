@@ -11,26 +11,32 @@
     min-width: 50%;
     position: relative;
 
-    &::after {
-      background-color: $green--1;
-      border-radius: 0.8rem;
-      content: "";
-      display: block;
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      transform: rotate(-3deg);
-      width: 100%;
-      z-index: 1;
-    }
-
     &__body {
-      background-color: $white--2;
-      border-radius: 0.8rem;
-      padding: 3.2rem;
-      position: relative;
-      z-index: 2;
+      height: 100%;
+      &__box {
+        min-height: 90%;
+        position: relative;
+        &__green-bg {
+          background-color: $green--1;
+          border-radius: 0.8rem;
+          content: "";
+          display: block;
+          height: 100%;
+          left: 0;
+          position: absolute;
+          top: 0;
+          transform: rotate(-3deg);
+          width: 100%;
+          z-index: 1;
+        }
+        &__text {
+          background-color: $white--2;
+          border-radius: 0.8rem;
+          padding: 3.2rem;
+          position: relative;
+          z-index: 2;
+        }
+      }
     }
 
     .process-list {

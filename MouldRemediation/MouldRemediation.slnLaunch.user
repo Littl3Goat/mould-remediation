@@ -4,12 +4,11 @@
     "Projects": [
       {
         "Path": "mouldremediation.client\\mouldremediation.client.esproj",
-        "Action": "StartWithoutDebugging"
+        "Action": "Start"
       },
       {
         "Path": "MouldRemediation.Server\\MouldRemediation.Server.csproj",
-        "Action": "Start",
-        "DebugTarget": "https"
+        "Action": "Start"
       }
     ]
   }
