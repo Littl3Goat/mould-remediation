@@ -15,4 +15,11 @@
   &:not(:last-child) {
     margin-bottom: 2rem;
   }
+
+  &--3 {
+    color: rgb(204, 251, 241);
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
 }

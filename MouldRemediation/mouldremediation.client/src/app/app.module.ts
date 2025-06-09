@@ -13,6 +13,7 @@ import { WhyChooseUsComponent } from './components/why-choose-us/why-choose-us.c
 import { OurServicesComponent } from './components/our-services/our-services.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { OurClientsComponent } from './components/our-clients/our-clients.component';
+import { ReadyComponent } from './components/ready/ready.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -25,6 +26,7 @@ import { OurClientsComponent } from './components/our-clients/our-clients.compon
     OurServicesComponent,
     AboutUsComponent,
     OurClientsComponent,
+    ReadyComponent,
   ],
   providers: [provideHttpClient(withInterceptorsFromDi())],
   bootstrap: [AppComponent],

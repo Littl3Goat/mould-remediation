@@ -36,6 +36,18 @@
     font-size: 1.4rem;
   }
 
+  &--3 {
+    background-color: $white--2;
+    color: $green--1;
+    font-weight: 500;
+    padding: 1.2rem 3.2rem;
+    margin: auto;
+    text-align: center;
+    &:hover {
+      scale: 1.05;
+    }
+  }
+
   &:not(:last-child) {
     margin-right: 1.4rem;
   }
