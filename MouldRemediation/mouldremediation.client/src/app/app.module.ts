@@ -12,6 +12,7 @@ import { MainBannerComponent } from './components/main-banner/main-banner.compon
 import { WhyChooseUsComponent } from './components/why-choose-us/why-choose-us.component';
 import { OurServicesComponent } from './components/our-services/our-services.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { OurClientsComponent } from './components/our-clients/our-clients.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,6 +24,7 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
     WhyChooseUsComponent,
     OurServicesComponent,
     AboutUsComponent,
+    OurClientsComponent,
   ],
   providers: [provideHttpClient(withInterceptorsFromDi())],
   bootstrap: [AppComponent],
