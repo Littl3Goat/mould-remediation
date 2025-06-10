@@ -13,7 +13,7 @@ import { WhyChooseUsComponent } from './components/why-choose-us/why-choose-us.c
 import { OurServicesComponent } from './components/our-services/our-services.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { OurClientsComponent } from './components/our-clients/our-clients.component';
-import { ReadyComponent } from './components/ready/ready.component';
+import { ReadySectionComponent } from './components/ready-section/ready-section.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -26,7 +26,7 @@ import { ReadyComponent } from './components/ready/ready.component';
     OurServicesComponent,
     AboutUsComponent,
     OurClientsComponent,
-    ReadyComponent,
+    ReadySectionComponent,
   ],
   providers: [provideHttpClient(withInterceptorsFromDi())],
   bootstrap: [AppComponent],
