@@ -22,4 +22,16 @@
     font-size: 1.6rem;
     line-height: 2.4rem;
   }
+
+  &--4 {
+    color: $black--1;
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+  &--5 {
+    color: $black--4;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
 }

@@ -1,0 +1,13 @@
+<div class="faq-title" (click)="onTitleClicked()">
+  <h3 class="heading heading--6">{{ title }}</h3>
+  <div class="faq-title__icon">
+    <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+  </div>
+</div>
+<div class="answer-box" [ngClass]="{ open: isOpen === true }">
+  <div class="answer-box__container">
+    <p class="paragraph paragraph--4">
+      <ng-content></ng-content>
+    </p>
+  </div>
+</div>

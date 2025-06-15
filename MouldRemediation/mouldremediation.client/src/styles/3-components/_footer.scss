@@ -1,0 +1,57 @@
+.footer-comp {
+  background-color: $blue--1;
+  padding: 4.8rem 0;
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3.2rem;
+    transition: all 0.4s ease-out;
+    &__logo {
+    }
+
+    &__quick-links,
+    &__services,
+    &__newsletter {
+      .heading--7 {
+        margin-bottom: 1.6rem;
+      }
+      .links-list {
+        list-style: none;
+
+        .link-item {
+          margin-top: 0.8rem;
+          .paragraph--5 {
+            text-decoration: none;
+            transition: all 0.2s ease-out;
+
+            &:hover {
+              color: $white--2;
+            }
+          }
+        }
+      }
+    }
+
+    &__services {
+    }
+
+    &__newsletter {
+      .newsletter-input {
+        border: 0.1rem solid rgb(209 213 219);
+        border-radius: 0.6rem;
+        background-color: $white--3;
+        font-family: Poppins;
+        font-size: 1.6rem;
+        min-width: 100%;
+        height: 4.2rem;
+        padding: 0.8rem 1.6rem;
+      }
+      .btn--1 {
+        text-align: center;
+        margin-top: 0.8rem;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -15,6 +15,8 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { OurClientsComponent } from './components/our-clients/our-clients.component';
 import { ReadySectionComponent } from './components/ready-section/ready-section.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { FaqSectionComponent } from './components/faq-section/faq-section.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -29,6 +31,8 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
     OurClientsComponent,
     ReadySectionComponent,
     ContactUsComponent,
+    FaqSectionComponent,
+    FooterComponent,
   ],
   providers: [provideHttpClient(withInterceptorsFromDi())],
   bootstrap: [AppComponent],
