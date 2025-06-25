@@ -46,4 +46,18 @@
       }
     }
   }
+
+  &__showcase-box {
+    margin-top: 4rem;
+
+    .showcase {
+      height: 40vh;
+    }
+
+    .slick-prev,
+    .slick-next {
+      color: $black--1;
+      font-size: 2rem;
+    }
+  }
 }

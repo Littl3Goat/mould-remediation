@@ -42,4 +42,38 @@
       </li>
     </ul>
   </div>
+  <div class="container container--2">
+    <div class="choose-us-comp__showcase-box">
+      <ngx-slick-carousel
+        class="carousel"
+        #slickModal="slick-carousel"
+        [config]="slideConfig"
+      >
+        <div ngxSlickItem class="showcase">
+          <app-image-compare
+            [beforeUrl]="'images/mould-1--before.webp'"
+            [afterUrl]="'images/mould-1--after.webp'"
+          ></app-image-compare>
+        </div>
+        <div ngxSlickItem class="showcase">
+          <app-image-compare
+            [beforeUrl]="'images/mould-2--before.webp'"
+            [afterUrl]="'images/mould-2--after.webp'"
+          ></app-image-compare>
+        </div>
+        <div ngxSlickItem class="showcase">
+          <app-image-compare
+            [beforeUrl]="'images/mould-3--before.webp'"
+            [afterUrl]="'images/mould-3--after.webp'"
+          ></app-image-compare>
+        </div>
+        <div ngxSlickItem class="showcase">
+          <app-image-compare
+            [beforeUrl]="'images/mould-4--before.webp'"
+            [afterUrl]="'images/mould-4--after.webp'"
+          ></app-image-compare>
+        </div>
+      </ngx-slick-carousel>
+    </div>
+  </div>
 </div>

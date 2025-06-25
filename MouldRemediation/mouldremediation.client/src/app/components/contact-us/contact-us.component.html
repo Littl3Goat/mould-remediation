@@ -12,37 +12,77 @@
         <div class="fill-form">
           <div class="fill-form__body">
             <h3 class="heading heading--3">Send Us a Message</h3>
-            <ul class="fill-form__list">
-              <li class="fill-item">
-                <div class="fill-item__description">Your Name</div>
-                <input class="fill-item__input-box" type="text" />
-              </li>
-              <li class="fill-item">
-                <div class="fill-item__description">Email Address</div>
-                <input class="fill-item__input-box" type="text" />
-              </li>
-              <li class="fill-item">
-                <div class="fill-item__description">Phone Number</div>
-                <input class="fill-item__input-box" type="text" />
-              </li>
-              <li class="fill-item">
-                <div class="fill-item__description">Service Needed</div>
-                <select class="fill-item__input-box select-option" type="text">
-                  <option value="">Select a service</option>
-                  <option value="">Residential Mould Removal</option>
-                  <option value="">Commercial Mould Remediation</option>
-                  <option value="">Mould Testing & Inspection</option>
-                  <option value="">Water Damage Restoration</option>
-                  <option value="">Preventative Maintenance</option>
-                  <option value="">Other</option>
-                </select>
-              </li>
-              <li class="fill-item">
-                <div class="fill-item__description">Your Message</div>
-                <textarea class="fill-item__input-box" type="text"></textarea>
-              </li>
-            </ul>
-            <a href="a" class="btn btn--1">Send Message</a>
+            <form [formGroup]="contactForm">
+              <ul class="fill-form__list">
+                <li class="fill-item">
+                  <div class="fill-item__description">Your Name</div>
+                  <input
+                    class="fill-item__input-box"
+                    type="text"
+                    formControlName="name"
+                  />
+                </li>
+                <li class="fill-item">
+                  <div class="fill-item__description">Email Address</div>
+                  <input
+                    class="fill-item__input-box"
+                    type="text"
+                    formControlName="email"
+                  />
+                </li>
+                <li class="fill-item">
+                  <div class="fill-item__description">Phone Number</div>
+                  <input
+                    class="fill-item__input-box"
+                    type="text"
+                    formControlName="phone"
+                  />
+                </li>
+                <li class="fill-item">
+                  <div class="fill-item__description">Service Needed</div>
+                  <select
+                    class="fill-item__input-box select-option"
+                    type="text"
+                    formControlName="service"
+                  >
+                    <option [value]="null">Select a service</option>
+                    <option [value]="'Residential Mould Removal'">
+                      Residential Mould Removal
+                    </option>
+                    <option [value]="'Commercial Mould Remediation'">
+                      Commercial Mould Remediation
+                    </option>
+                    <option [value]="'Mould Testing & Inspection'">
+                      Mould Testing & Inspection
+                    </option>
+                    <option [value]="'Water Damage Restoration'">
+                      Water Damage Restoration
+                    </option>
+                    <option [value]="'Preventative Maintenance'">
+                      Preventative Maintenance
+                    </option>
+                    <option [value]="'Other'">Other</option>
+                  </select>
+                </li>
+                <li class="fill-item">
+                  <div class="fill-item__description">Your Message</div>
+                  <textarea
+                    class="fill-item__input-box"
+                    type="text"
+                    formControlName="message"
+                  ></textarea>
+                </li>
+              </ul>
+            </form>
+
+            <button
+              type="button"
+              class="btn btn--1"
+              [disabled]="contactForm.invalid"
+              (click)="onSendMessage()"
+            >
+              Send Message
+            </button>
           </div>
         </div>
         <div class="contact">
