@@ -1,0 +1,11 @@
+<div class="review-item__heading">
+  <div class="review-item__heading__icon">{{ icon }}</div>
+  <div class="review-item__heading__name">
+    {{ name }} <br />
+
+    <i *ngFor="let item of starArray" class="fa fa-star" aria-hidden="true"></i>
+  </div>
+</div>
+<div class="review-item__description">
+  <ng-content></ng-content>
+</div>
