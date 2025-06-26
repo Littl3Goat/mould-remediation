@@ -16,19 +16,27 @@
         <h2 class="heading heading--7">Quick Links</h2>
         <ul class="links-list">
           <li class="link-item">
-            <a href="a" class="paragraph paragraph--5">Home</a>
+            <a href="#" class="paragraph paragraph--5">Home</a>
           </li>
           <li class="link-item">
-            <a href="a" class="paragraph paragraph--5">Services</a>
+            <a href="#our-services-section" class="paragraph paragraph--5"
+              >Services</a
+            >
           </li>
           <li class="link-item">
-            <a href="a" class="paragraph paragraph--5">Our Process</a>
+            <a href="#about-us-section" class="paragraph paragraph--5"
+              >Our Process</a
+            >
           </li>
           <li class="link-item">
-            <a href="a" class="paragraph paragraph--5">Testimonials</a>
+            <a href="#our-clients-section" class="paragraph paragraph--5"
+              >Testimonials</a
+            >
           </li>
           <li class="link-item">
-            <a href="a" class="paragraph paragraph--5">Contact</a>
+            <a href="#contact-us-section" class="paragraph paragraph--5"
+              >Contact</a
+            >
           </li>
         </ul>
       </div>
@@ -36,27 +44,27 @@
         <h2 class="heading heading--7">Services</h2>
         <ul class="links-list">
           <li class="link-item">
-            <a href="a" class="paragraph paragraph--5">
+            <a href="#our-services-section" class="paragraph paragraph--5">
               Residential Mould Removal
             </a>
           </li>
           <li class="link-item">
-            <a href="a" class="paragraph paragraph--5">
+            <a href="#our-services-section" class="paragraph paragraph--5">
               Commercial Mould Remediation
             </a>
           </li>
           <li class="link-item">
-            <a href="a" class="paragraph paragraph--5">
+            <a href="#our-services-section" class="paragraph paragraph--5">
               Mould Testing & Inspection
             </a>
           </li>
           <li class="link-item">
-            <a href="a" class="paragraph paragraph--5">
+            <a href="#our-services-section" class="paragraph paragraph--5">
               Water Damage Restoration
             </a>
           </li>
           <li class="link-item">
-            <a href="a" class="paragraph paragraph--5">
+            <a href="#our-services-section" class="paragraph paragraph--5">
               Preventative Maintenance
             </a>
           </li>
@@ -68,12 +76,23 @@
           Subscribe to our newsletter for tips on mould prevention and special
           offers.
         </p>
-        <input
-          class="newsletter-input"
-          placeholder="Your email address"
-          type="text"
-        />
-        <a href="a" class="btn btn--1">Subscribe</a>
+        <form [formGroup]="emailNewsForm">
+          <input
+            class="newsletter-input"
+            formControlName="emailNews"
+            placeholder="Your email address"
+            type="text"
+          />
+        </form>
+
+        <button
+          type="button"
+          class="btn btn--1"
+          [disabled]="emailNewsForm.invalid"
+          (click)="onSendEmail()"
+        >
+          Subscribe
+        </button>
       </div>
     </div>
   </div>
