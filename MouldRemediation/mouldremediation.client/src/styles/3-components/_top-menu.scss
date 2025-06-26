@@ -12,6 +12,11 @@
   }
 
   .logo-box {
+    height: 4rem;
+    img {
+      height: 100%;
+      transform: translateY(-0.3rem);
+    }
   }
 
   .menu-box {

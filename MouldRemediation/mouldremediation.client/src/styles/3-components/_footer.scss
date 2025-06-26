@@ -8,6 +8,10 @@
     gap: 3.2rem;
     transition: all 0.4s ease-out;
     &__logo {
+      height: 5rem;
+      img {
+        height: 100%;
+      }
     }
 
     &__quick-links,
