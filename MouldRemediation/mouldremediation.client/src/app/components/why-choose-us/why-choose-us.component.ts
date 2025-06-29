@@ -22,6 +22,15 @@ export class WhyChooseUsComponent implements OnInit {
     nextArrow: `<button type="button" class="slick-next">
                   <i class="fa-solid fa-circle-chevron-right"></i>
                 </button>`,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   ngOnInit() {}

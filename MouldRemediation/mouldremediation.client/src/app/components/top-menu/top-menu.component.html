@@ -4,25 +4,43 @@
       <div class="logo-box">
         <img src="images\MR2.png" alt="Logo" />
       </div>
-      <ul class="menu-box">
+      <ul class="menu-box" [ngClass]="{ open: isMobileMenuOpen === true }">
         <li class="menu-box__item">
           <a href="#">Home</a>
         </li>
         <li class="menu-box__item">
-          <a href="#our-services-section">Services</a>
+          <a href="#our-services-section" (click)="onLinkClick()">Services</a>
         </li>
         <li class="menu-box__item">
-          <a href="#about-us-section">About</a>
+          <a href="#about-us-section" (click)="onLinkClick()">About</a>
         </li>
         <li class="menu-box__item">
-          <a href="#our-clients-section">Testimonials</a>
+          <a href="#our-clients-section" (click)="onLinkClick()">
+            Testimonials
+          </a>
         </li>
         <li class="menu-box__item">
-          <a href="#contact-us-section" class="btn btn--1 btn--small">
+          <a
+            href="#contact-us-section"
+            class="btn btn--1 btn--small"
+            (click)="onLinkClick()"
+          >
             Contact Us
           </a>
         </li>
       </ul>
+      <button
+        type="button"
+        class="btn top-menu-comp__mobile-open-btn"
+        [ngClass]="{ open: isMobileMenuOpen === true }"
+        (click)="onToggleMobileMenu()"
+      >
+        <i *ngIf="isMobileMenuOpen === false" class="fa-solid fa-bars"></i>
+        <i
+          *ngIf="isMobileMenuOpen === true"
+          class="fa-solid fa-circle-xmark"
+        ></i>
+      </button>
     </div>
   </div>
 </div>
