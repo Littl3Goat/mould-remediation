@@ -10,6 +10,7 @@
   &__reason-list {
     column-gap: 3rem;
     display: flex;
+    flex-direction: row;
     list-style: none;
     margin-top: 6rem;
 
@@ -43,6 +44,13 @@
 
       &:hover {
         box-shadow: 0 1rem 2rem 0.2rem rgba(black, 0.09);
+      }
+    }
+
+    @media screen and (max-width: 650px) {
+      flex-direction: column;
+      .reason:not(:last-child) {
+        margin-bottom: 2.5rem;
       }
     }
   }

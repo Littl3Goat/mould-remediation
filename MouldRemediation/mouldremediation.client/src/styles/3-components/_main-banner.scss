@@ -9,9 +9,27 @@
 
   &__text-box {
     flex: 1;
+
+    &__button-container {
+      display: flex;
+      flex-direction: row;
+      gap: 1.4rem;
+    }
   }
 
   &__img-box {
     flex: 1.1;
+  }
+
+  @media screen and (max-width: $small) {
+    &__text-box {
+      &__button-container {
+      }
+    }
+    flex-direction: column;
+
+    &__img-box {
+      display: none;
+    }
   }
 }
