@@ -14,6 +14,7 @@ import { OurServicesComponent } from './components/our-services/our-services.com
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { OurClientsComponent } from './components/our-clients/our-clients.component';
 import { ReadySectionComponent } from './components/ready-section/ready-section.component';
+import { ImageCompareComponent } from './components/image-compare/image-compare.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FaqSectionComponent } from './components/faq-section/faq-section.component';
@@ -28,6 +29,7 @@ import { FaqSectionComponent } from './components/faq-section/faq-section.compon
     WhyChooseUsComponent,
     OurServicesComponent,
     AboutUsComponent,
+    ImageCompareComponent,
     OurClientsComponent,
     ReadySectionComponent,
     ContactUsComponent,

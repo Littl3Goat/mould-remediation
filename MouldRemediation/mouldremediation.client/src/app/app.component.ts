@@ -7,5 +7,7 @@ import { Component, OnInit } from '@angular/core';
   standalone: false,
 })
 export class AppComponent implements OnInit {
-  ngOnInit() {}
+  ngOnInit() {
+    document.title = 'Construction Mould Remediation';
+  }
 }

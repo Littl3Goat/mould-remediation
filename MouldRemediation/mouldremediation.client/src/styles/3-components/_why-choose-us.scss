@@ -5,6 +5,10 @@
   &__text-box {
     padding: 0 22%;
     text-align: center;
+
+    @media screen and (max-width: 460px) {
+      padding: 0 12%;
+    }
   }
 
   &__reason-list {
@@ -49,6 +53,7 @@
 
     @media screen and (max-width: 650px) {
       flex-direction: column;
+
       .reason:not(:last-child) {
         margin-bottom: 2.5rem;
       }

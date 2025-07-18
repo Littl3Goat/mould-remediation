@@ -1,5 +1,8 @@
 .main-banner-comp {
   background-color: #f0f9ff;
+  background-image: url("/images/main-banner-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 
   &__body {
     display: flex;
@@ -23,10 +26,12 @@
 
   @media screen and (max-width: $small) {
     &__text-box {
+      text-align: center;
+
       &__button-container {
+        justify-content: center;
       }
     }
-    flex-direction: column;
 
     &__img-box {
       display: none;
