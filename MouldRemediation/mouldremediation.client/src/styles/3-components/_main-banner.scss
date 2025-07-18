@@ -1,40 +1,44 @@
 .main-banner-comp {
-  background-color: #f0f9ff;
-  background-image: url("/images/main-banner-bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
 
-  &__body {
-    display: flex;
-    flex-direction: row;
-    padding: 10rem 0;
+  &__banner-background {
+    display: block;
+    width: 100%;
   }
 
-  &__text-box {
-    flex: 1;
+  .text-box {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    padding-left: 13%;
+    top: 0;
+    width: 100%;
 
-    &__button-container {
+    &__container {
+      margin-top: -5%;
+      width: 30%;
+    }
+
+    &__header {
+    }
+
+    &__footer {
       display: flex;
       flex-direction: row;
       gap: 1.4rem;
+      margin-top: 4rem;
     }
-  }
-
-  &__img-box {
-    flex: 1.1;
   }
 
   @media screen and (max-width: $small) {
-    &__text-box {
+    .text-box {
       text-align: center;
 
-      &__button-container {
+      &__footer {
         justify-content: center;
       }
-    }
-
-    &__img-box {
-      display: none;
     }
   }
 }
