@@ -11,8 +11,11 @@
       <div class="contact-us-comp__information">
         <div class="fill-form">
           <div class="fill-form__body">
-            <h3 class="heading heading--3">Send Us a Message</h3>
-            <form [formGroup]="contactForm">
+            <h3 class="heading heading--3">
+              <span *ngIf="!isSubmitted">Send Us a Message</span>
+              <span *ngIf="isSubmitted">Submission Complete</span>
+            </h3>
+            <form [formGroup]="enquiryForm" *ngIf="!isSubmitted">
               <ul class="fill-form__list">
                 <li class="fill-item">
                   <div class="fill-item__description">Your Name</div>
@@ -73,16 +76,22 @@
                   ></textarea>
                 </li>
               </ul>
+              <button
+                type="submit"
+                class="btn btn--1"
+                [disabled]="enquiryForm.invalid || isSubmitting"
+                (click)="onSendMessage()"
+              >
+                <span *ngIf="!isSubmitting">Send Message</span>
+                <span *ngIf="isSubmitting">
+                  <i class="fa-solid fa-spinner fa-spin"></i>
+                </span>
+              </button>
             </form>
-
-            <button
-              type="button"
-              class="btn btn--1"
-              [disabled]="contactForm.invalid"
-              (click)="onSendMessage()"
-            >
-              Send Message
-            </button>
+            <p *ngIf="isSubmitted" class="paragraph paragraph--1">
+              Thank you for reaching out! Our team will contact you as soon as
+              possible.
+            </p>
           </div>
         </div>
         <div class="contact">

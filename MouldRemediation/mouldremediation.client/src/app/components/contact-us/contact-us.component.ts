@@ -1,32 +1,38 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
-import {
-  FormControl,
-  FormGroup,
-  ReactiveFormsModule,
-  Validators,
-} from '@angular/forms';
+import { Component, inject, OnInit } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
+import { NewEnquiryFg } from '../../models/form-groups/NewEnquiryFg';
+import { EnquiryApiService } from '../../services/enquiryApi.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-contact-us',
   templateUrl: 'contact-us.component.html',
-  imports: [ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule],
 })
 export class ContactUsComponent implements OnInit {
-  contactForm: FormGroup;
+  private enquiryApi = inject(EnquiryApiService);
+
+  isSubmitting = false;
+  isSubmitted = false;
+  enquiryForm: NewEnquiryFg;
 
   ngOnInit() {
-    this.contactForm = new FormGroup({
-      name: new FormControl(null, [Validators.required]),
-      email: new FormControl(null, [Validators.required]),
-      phone: new FormControl(null, [Validators.required]),
-      service: new FormControl(null, []),
-      message: new FormControl(null, [Validators.required]),
-    });
+    this.enquiryForm = new NewEnquiryFg();
   }
 
-  onSendMessage = () => {
-    if (this.contactForm.invalid) return;
+  onSendMessage = async () => {
+    const model = this.enquiryForm.toModel();
 
-    console.log(this.contactForm.value);
+    if (!model) return;
+
+    try {
+      this.isSubmitting = true;
+
+      await this.enquiryApi.sendNewEnquiryAsync(model);
+    } catch (error) {
+      console.log(error);
+    } finally {
+      this.isSubmitted = true;
+    }
   };
 }
