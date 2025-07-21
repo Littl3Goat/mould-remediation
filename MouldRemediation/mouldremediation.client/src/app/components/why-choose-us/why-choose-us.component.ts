@@ -29,6 +29,7 @@ export class WhyChooseUsComponent implements OnInit {
           slidesToShow: 1,
           slidesToScroll: 1,
           draggable: false,
+          swipe: false,
         },
       },
     ],

@@ -9,7 +9,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class OurServicesItemComponent implements OnInit {
   @Input() title: string;
-  @Input() icon: string;
+
+  @Input() img: string;
 
   constructor() {}
 

@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import {
   FormControl,
@@ -10,12 +11,14 @@ import {
   selector: 'app-footer',
   templateUrl: 'footer.component.html',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, CommonModule],
 })
 export class FooterComponent implements OnInit {
   constructor() {}
 
   today = new Date();
+
+  isSubscribed = false;
 
   emailNewsForm: FormGroup;
 
@@ -27,5 +30,7 @@ export class FooterComponent implements OnInit {
 
   onSendEmail = () => {
     if (this.emailNewsForm.invalid) return;
+
+    this.isSubscribed = true;
   };
 }

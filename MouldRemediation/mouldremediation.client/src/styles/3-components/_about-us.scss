@@ -21,8 +21,8 @@
 
     &__body {
       height: 100%;
+
       &__box {
-        min-height: 90%;
         position: relative;
         &__green-bg {
           background-color: $green--1;
@@ -37,6 +37,7 @@
           width: 100%;
           z-index: 1;
         }
+
         &__text {
           background-color: $white--2;
           border-radius: 0.8rem;

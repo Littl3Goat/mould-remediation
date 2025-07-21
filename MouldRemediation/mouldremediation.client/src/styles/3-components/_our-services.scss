@@ -20,14 +20,18 @@
       overflow: hidden;
       transition: all 0.2s ease-out;
 
-      &__logo {
-        align-items: center;
-        background-color: $green--1;
-        color: $white--3;
-        display: flex;
-        font-size: 5.3rem;
-        justify-content: center;
-        padding: 7rem 0;
+      &__img-box {
+        height: 30rem;
+        position: relative;
+
+        .img {
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          object-fit: cover;
+          width: 100%;
+        }
       }
 
       &__description {

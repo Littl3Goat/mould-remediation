@@ -3,7 +3,7 @@
     <div class="footer-comp__body">
       <div class="footer-comp__body__logo-box">
         <div class="logo-container">
-          <img class="footer-logo" src="images\mould-logo.png" alt="logo" />
+          <img class="footer-logo" src="/images/mould-logo.png" alt="logo" />
         </div>
         <p class="paragraph paragraph--5">
           Professional mould removal services for residential and commercial
@@ -50,23 +50,25 @@
           Subscribe to our newsletter for tips on mould prevention and special
           offers.
         </p>
-        <form [formGroup]="emailNewsForm">
+        <p class="paragraph paragraph--5" *ngIf="isSubscribed === true">
+          Thanks for your subscription!
+        </p>
+        <form [formGroup]="emailNewsForm" *ngIf="isSubscribed === false">
           <input
             class="newsletter-input"
             formControlName="emailNews"
             placeholder="Your email address"
             type="text"
           />
+          <button
+            type="submit"
+            class="btn btn--1"
+            [disabled]="emailNewsForm.invalid"
+            (click)="onSendEmail()"
+          >
+            Subscribe
+          </button>
         </form>
-
-        <button
-          type="button"
-          class="btn btn--1"
-          [disabled]="emailNewsForm.invalid"
-          (click)="onSendEmail()"
-        >
-          Subscribe
-        </button>
       </div>
     </div>
   </div>

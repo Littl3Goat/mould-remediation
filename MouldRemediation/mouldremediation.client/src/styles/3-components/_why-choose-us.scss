@@ -64,7 +64,11 @@
     margin-top: 4rem;
 
     .showcase {
-      height: 40vh;
+      height: 30vw;
+
+      @media screen and (max-width: 800px) {
+        height: 50vh;
+      }
     }
 
     .slick-prev,
